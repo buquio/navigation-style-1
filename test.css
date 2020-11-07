@@ -1,0 +1,100 @@
+/*
+grey #f8f8f8
+deep grey #707070
+blue #1792d2
+royal blue #143774
+*/
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+h1{
+    font-family: 'Lora' ,serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+    color:#143774 ;
+}
+
+.subtitle{
+    color:#1792d2 ;
+    font-weight: 700;
+    margin: 0;
+    font-size: 0.75rem;
+
+}
+
+header{
+    /* background-color:#707070; */
+    background-color:#f8f8f8;
+    padding: 2em 0;
+}
+
+.container{
+    width: 90%;
+    margin:0 auto ;
+    min-width: 900px;
+
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* added for nav3 @madia */
+@media(max-width:675px){
+    .container-flex{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: csenter;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+    margin-left: 2em;
+}
+
+nav a{
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color:#1792d2;
+}
+/* added for nav3 @madia */
+@media(max-width:675px){
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: 0.5em 0;
+    }
+}
+
+.current-page{
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
