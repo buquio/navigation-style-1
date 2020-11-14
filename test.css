@@ -7,6 +7,7 @@ royal blue #143774
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+/*     this font could be inherited by other classes */
 
 }
 
